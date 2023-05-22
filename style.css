@@ -1,0 +1,55 @@
+/* Reset default margin and padding */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply box-sizing: border-box to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Define common styles */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  float: left;
+  width: 33.33%;
+  border: 1px solid black;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  position: relative;
+  background-color: #ff8080;
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 125%;
+}
+
+.section-content {
+  padding: 10px;
+}
+
+/* Media queries for responsive layout */
+@media screen and (max-width: 991px) {
+  .section {
+    width: 50%;
+  }
+
+  .section:nth-child(3) {
+    clear: both;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    width: 100%;
+  }
+}
