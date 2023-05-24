@@ -2,11 +2,13 @@
 body, h1, p {
   margin: 0;
   padding: 0;
+  
 }
 
 /* Apply box-sizing: border-box to all elements */
 * {
   box-sizing: border-box;
+  
 }
 
 /* Define common styles */
@@ -14,33 +16,51 @@ body, h1, p {
   max-width: 100%;
   margin: 0 auto;
   padding: 20px;
+  
 }
 
 .section {
+  padding-top: 30px;
+  position: relative;
   float: left;
-  width: 33.33%;
+  width: 32.30%;
   border: 1px solid black;
   background-color: #f2f2f2;
   margin-bottom: 20px;
+  margin-right: 5px;
+  border: 2px solid black;
+  
+  
 }
 
 .section-title {
-  position: relative;
+  text-align: center;
+  display: inline;
+  position: absolute;
+  width: 100px;
+  right: 0;
+  top: 0;
+  justify-content: flex-end;
   background-color: #ff8080;
   color: #ffffff;
   padding: 5px 10px;
   font-size: 125%;
+  border: 2px solid black;
+  
 }
 
 .section-content {
   padding: 10px;
+  
 }
 
 /* Media queries for responsive layout */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .section {
-    width: 50%;
+
+    width: 49%;
   }
+  
 
   .section:nth-child(3) {
     clear: both;
@@ -48,10 +68,26 @@ body, h1, p {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px)
+ {
   .section {
     width: 100%;
   }
 }
 
+
+
+
+.section-title:nth-child(2){
+  background-color: rgb(255, 123, 0);
+}
+.section-title:nth-child(3){
+  background-color: rgb(166, 255, 0);
+}
+
+
+h1{
+      text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}  
 
