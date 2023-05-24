@@ -68,12 +68,13 @@ body, h1, p {
   }
 }
 
-@media screen and (max-width: 767px)
+@media screen  and (max-width: 767px)
  {
   .section {
     width: 100%;
   }
-}
+ }
+ 
 
 
 
